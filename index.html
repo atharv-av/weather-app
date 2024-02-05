@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/0242f31d13.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Weather App</title>
+</head>
+<body class="flex items-center justify-center h-screen bg-black">
+    <div class="card bg-black text-white h-60 p-6 rounded-3xl opacity-75 w-full max-w-md">
+        <form action="/" method="post" class="search flex justify-center items-center">
+            <label for="cityInput"></label>
+            <input name="cityName" id="cityInput" type="text" placeholder="Search" class="search-bar border-black border-2 mx-1 rounded-2xl py-1 px-2 w-9/12 bg-stone-900 text-xl">
+            <button type="submit" title="Go" class="hover:text-gray-300 duration-300 hover:translate-x-1 ease-in-out transition"><i class="fa-solid fa-magnifying-glass text-2xl"></i></button>
+        </form>
+        <div class="weather">
+            <h2 class="city font-bold text-3xl my-2">Weather in Denver</h2>
+            <div class="temperature text-4xl">51°C</div>
+            <img src="" alt="">
+            <div class="description">Cloudy</div>
+            <div class="humidity">Humidity: 60%</div>
+            <div class="wind">Wind Speed: 6.2 km/h</div>
+        </div>
+    </div>
+</body>
+</html>
